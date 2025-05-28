@@ -63,12 +63,9 @@ def validate_card(card_number):
 #Main Function
 def main():
     while True:
-
         # User input
         card_number = input("\nEnter your credit or debit card number: ").strip().replace("-", "").replace(" ", "")
-
         validate_card(card_number)
-
         repeat = input("\nWould you like to validate another card? (yes/no): ").strip().lower()
         if repeat != 'yes':
             print("\nThank you for using Card Validator! Goodbye.")
